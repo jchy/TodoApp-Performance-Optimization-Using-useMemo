@@ -4,7 +4,7 @@ import Todo from "./Todo/Todo";
 export default function App() {
   return (
     <div className="App">
-      <h1>Performance Optimisation</h1>
+      <h1>React Todo app using - Use Memo </h1>
       <Todo />
     </div>
   );

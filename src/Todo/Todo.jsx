@@ -9,13 +9,7 @@ import { v4 as uuid } from "uuid";
 function Todo() {
   // BE CAREFUL HERE
   const [state, setState] = useState("");
-  const [data, setData] = useState(() => {
-    return new Array(5).fill(0).map((_, i) => ({
-      id: i,
-      title: `${i}th element`,
-      status: false
-    }));
-  });
+  const [data, setData] = useState([]);
   const handleAdd = (title) => {
     setData([
       ...data,
